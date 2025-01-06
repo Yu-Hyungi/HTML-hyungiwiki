@@ -34,11 +34,35 @@
             #article{
                 padding-left: 40px;
             }
+            #article a{
+                text-decoration: blue underline;
+            }
+            
             #grid ol{
                 padding-left: 40px;
             }
             h3{
                 font-size: 30px;
+            }
+            #expert{
+                display: inline;
+            }
+            @media(max-width:800px){
+                h1{
+                    font-size: 40px;
+                }
+                ol{
+                    border-right: none;
+                    border-bottom: 1px solid black;
+                    margin-bottom: 0px;
+                    padding-right: 800px;
+                    
+                   
+                }
+                #grid{
+                    display: block;
+                    
+                }
             }
             
            
@@ -54,15 +78,15 @@
             <ol>
                 <li><a href="outline.html">개요</a></li>
                 <li><a href="version.html">버전</a></li>
-                <li><a href="explanation.html">설명<a></li>
-                <li><a href="tag.html">태그<a></li>
+                <li><a href="explanation.html">설명</a></li>
+                <li><a href="tag.html">태그</a></li>
             </ol>
         
             <div id="article">
                 <h3>HTML이란?</h3>
                 <p>HTML은 웹 브라우저마다 지원하는 태그가 조금씩 다르며, 같은 태그라도 작동하는 방법이 다르지만 대체로 비슷한 태그를 지원한다.</p>
                 <p>WHATWG HTML Living Standard의 최신 버전을 기준으로 한다.</p>
-                <p>태그들의 종류는 사이트 참조 <a href="https://www.w3schools.com/tags/default.asp">태그 목록</a></p>
+                <p id="expert">태그들의 종류는 사이트 참조 </p><a href="https://www.w3schools.com/tags/default.asp">태그 목록</a>
 
             </div>
         </div>
