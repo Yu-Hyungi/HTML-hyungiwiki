@@ -3,23 +3,63 @@
     <head>
         <title>HTML에 대하여</title>
         <meta charset="UTF-8">
+        <style>
+            body{
+                margin: 0px;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            h1{
+                text-align: center;
+                font-size: 80px;
+                border-bottom: 1px solid black;
+                margin: 0px;
+                padding: 20px;
+            }
+            ol{
+                border-right:1px solid black;
+                width:100px;
+                margin:0px;
+                padding:20px;
+                line-height: 50px;
+            }
+            #grid{
+                display:grid;
+                grid-template-columns:150px 1fr;
+            }
+            #article{
+                padding-left: 40px;
+            }
+            #grid ol{
+                padding-left: 40px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            
+           
+            
+        </style>
     </head>
 
     <body>
-        <header>
-            <h1><a href="index.html">HTML</a></h1>
-            <h2>HTML이란?</h2>
-            <nav>
-                <ul>
-                    <li><a href="outline.html">개요</a></li>
-                    <li><a href="version.html">버전</a></li>
-                    <li><a href="explanation.html">설명<a></li>
-                    <li><a href="tag.html">태그<a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article>
+        
+        <h1><a href="index.html">HTML</a></h1>
+
+        <div id="grid">
+            
+            <ol>
+                <li><a href="outline.html">개요</a></li>
+                <li><a href="version.html">버전</a></li>
+                <li><a href="explanation.html">설명<a></li>
+                <li><a href="tag.html">태그<a></li>
+            </ol>
+            
+
+
+            <div id="article">
                 <h3>개요</h3>
                 <p>웹사이트의 모습을 기술하기 위한 마크업 언어.</p>
 
@@ -34,9 +74,12 @@
                 URL, HTTP, WWW의 전신인 Enquire 등도 그가 세트로 개발하고 
                 제안했다. TCP/IP 통신규약을 만든 빈턴 G. 서프(Vinton Gray 
                 Cerf)와 함께 인터넷의 아버지로 불린다.</p>
-            </article>
-            <img src="html logo.jpg">
-        </main>
+                <img src="html logo.jpg">
+            </div>
+        </div>
+        
+
+                 
         
     </body>
 </html>
